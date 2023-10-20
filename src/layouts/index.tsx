@@ -16,7 +16,7 @@ export default function Layout() {
         </nav>
       </header>
       <Outlet />
-      <footer className="container m-auto py-8 md:py-20">
+      <footer className="container m-auto py-8 md:py-20 px-4 md:px-0">
         <div className="flex justify-between pb-10 border-b">
           <div className="logo">
             <img src="./assets/images/logo-only.svg" alt="" />
@@ -29,7 +29,7 @@ export default function Layout() {
           </div>
         </div>
         <div className="py-10 flex flex-wrap">
-          <div className="subcribe w-full md:w-2/5 mb-3">
+          <div className="subcribe w-full md:w-2/5 mb-10">
             <div className="text-4xl text-blue-500 mb-5 uppercase font-bold">
               <div>Subscribe</div>
               <div>newsletter</div>

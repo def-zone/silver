@@ -22,7 +22,7 @@ const Card = (props: CardProps) => {
 
 const Service: React.FC = () => {
     return (
-        <section className='mb-10 md:mb-20'>
+        <section className='mb-10 md:mb-20 container mx-auto'>
             <div className="text-center md:mb-20 mb-10">
                 <div className="text-blue-500 uppercase text-sm font-bold">Dịch vụ của chúng tôi</div>
                 <div className="md:text-4xl text-xl text-blue-800 font-bold">Giải pháp cho doanh nghiệp của bạn</div>

@@ -36,18 +36,18 @@ const Testimonial: React.FC = () => {
     ]
 
     return (
-        <section className="container m-auto py-10 md:py-20">
+        <section className="container m-auto py-10 md:py-20 mb-10 px-4 md:px-0">
             <div className="review-container">
-                <div className="section-header flex justify-between items-center">
-                    <h2 className="text-blue-800 text-5xl font-bold mb-10">
+                <div className="section-header flex justify-between items-center mb-10">
+                    <div className="text-blue-900 md:text-5xl text-2xl font-bold">
                         <div className="mb-2">Khách hàng nói về</div>
                         <div>chúng tôi</div>
-                    </h2>
-                    <div className="review-controls text-3xl">
-                        <button type="button" className="prev-review">
+                    </div>
+                    <div className="flex gap-4">
+                        <button type="button" className="h-10 w-10 flex items-center justify-center border-2 rounded-full">
                             <i className="fa-regular fa-circle-left" />
                         </button>
-                        <button type="button" className="next-review">
+                        <button type="button" className="h-10 w-10 flex items-center justify-center border-2 rounded-full border-gray-800">
                             <i className="fa-regular fa-circle-right" />
                         </button>
                     </div>
@@ -55,6 +55,27 @@ const Testimonial: React.FC = () => {
                 <Slider
                     slidesPerRow={3}
                     autoplay
+                    dots
+                    responsive={[
+                        {
+                            breakpoint: 640,
+                            settings: {
+                                slidesPerRow: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesPerRow: 1
+                            }
+                        },
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesPerRow: 3
+                            }
+                        } 
+                    ]}
                 >
                     {
                         data.map((x, i) => (
@@ -78,11 +99,7 @@ const Testimonial: React.FC = () => {
                                     quae ab illo inventore.
                                 </div>
                                 <div className="rating text-yellow-300">
-                                    <i className="fa-solid fa-star" />
-                                    <i className="fa-solid fa-star" />
-                                    <i className="fa-solid fa-star" />
-                                    <i className="fa-solid fa-star" />
-                                    <i className="fa-solid fa-star" />
+                                    <img src="https://i.imgur.com/kQ5yd2B.png" loading="lazy" />
                                 </div>
                             </div>
                         ))
