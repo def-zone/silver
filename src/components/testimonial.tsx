@@ -36,11 +36,12 @@ const Testimonial: React.FC = () => {
     ]
 
     return (
-        <section className="container m-auto md:max-h-[50vh] lg:max-h-[40vh] customer-reviews">
+        <section className="container m-auto py-10 md:py-20">
             <div className="review-container">
                 <div className="section-header flex justify-between items-center">
-                    <h2 className="text-blue-800 text-4xl font-bold mb-10">
-                        Khách hàng nói về chúng tôi
+                    <h2 className="text-blue-800 text-5xl font-bold mb-10">
+                        <div className="mb-2">Khách hàng nói về</div>
+                        <div>chúng tôi</div>
                     </h2>
                     <div className="review-controls text-3xl">
                         <button type="button" className="prev-review">
